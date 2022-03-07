@@ -32,9 +32,11 @@ console.log(characters);
 
 //***MAP***
 //1. Get array of all names
-
 const names = characters.map(e => e.name);
 console.log(names);
+//2. Get array of all gender
+const genders = characters.map(e => e.gender);
+console.log(genders);
 //2. Get array of all heights
 const heights = characters.map(e => e.height);
 console.log(heights)

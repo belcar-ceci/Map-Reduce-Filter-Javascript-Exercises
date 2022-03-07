@@ -74,3 +74,13 @@ console.log(dogSearch);
 
 const showDog = animals.filter((animal) => animal.Species == "dog");
 console.log(showDog);
+
+//MAP
+
+const newList = animals.map(ani => ani.Species);
+console.log(newList);
+
+const newLis = animals.map((ani) => ({
+    especie: ani.Species,
+}))
+console.log(newLis)

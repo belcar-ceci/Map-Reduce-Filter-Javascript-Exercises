@@ -32,11 +32,11 @@ const cochesVenta = [
 
 ];
 
-var cochesTrabajar = [...cochesVenta];
-var cocheFavorito = cochesTrabajar[0];
+const cochesTrabajar = [...cochesVenta];
+const cocheFavorito = cochesTrabajar[2];
 console.log(cocheFavorito);
 
-var marques = [];
+let marques = [];
 // for... guardar sols les marques.
 for (let i = 0; i < cochesTrabajar.length; i++) {
     const marcaAguardar = cochesTrabajar[i].marca;
@@ -44,11 +44,11 @@ for (let i = 0; i < cochesTrabajar.length; i++) {
 }
 console.log(marques);
 
-marques = cochesTrabajar.map(coche => coche.marca);
-
+const marque = cochesTrabajar.map(coche => coche.marca);
+console.log(marque);
 
 //array sols seat
-let seat = cochesTrabajar.filter(coche => coche.marca == 'seat');
+const seat = cochesTrabajar.filter(coche => coche.marca == 'seat');
 console.log(seat);
 
 //funcio (valor), 
@@ -62,3 +62,8 @@ function valorExiste(valor) {
         
     }
 }
+
+let number = [1,2,3].push(4);
+console.log(number);
+
+
